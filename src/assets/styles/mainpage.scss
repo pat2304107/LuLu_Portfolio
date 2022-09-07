@@ -1,6 +1,9 @@
 $light: #f2f2f2;
 $dark: #2e2624;
 $main: #f46262;
+* {
+  color: $dark;
+}
 
 .container {
   width: 1320px;
@@ -12,4 +15,13 @@ $main: #f46262;
 .photo {
   width: 185px;
   height: 228px;
+}
+
+.name {
+}
+
+.introduction {
+  width: 620px;
+  height: 104px;
+  font-size: 20px;
 }
