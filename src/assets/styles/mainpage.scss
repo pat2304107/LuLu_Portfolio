@@ -1,0 +1,15 @@
+$light: #f2f2f2;
+$dark: #2e2624;
+$main: #f46262;
+
+.container {
+  width: 1320px;
+  height: 800px;
+  border: 2px solid $dark;
+  border-style: none solid;
+}
+
+.photo {
+  width: 185px;
+  height: 228px;
+}
