@@ -2,8 +2,8 @@
   <div class="container">
     <img src="../assets/C81C83E2.jpeg" class="photo" />
     <div class="name">
-      <h1>盧俊諺</h1>
-      <h2>CHUN-YEN LU</h2>
+      <div class="name_ch">盧　俊諺</div>
+      <div class="name_en">CHUN-YEN LU</div>
     </div>
     <div class="introduction">
       畢業於國立臺灣藝術大學圖文傳播藝術學系。<br />
