@@ -1,35 +1,93 @@
 $light: #f2f2f2;
 $dark: #2e2624;
 $main: #f46262;
+@font-face {
+  font-family: 'GenSekiGothic-H';
+  font-style: normal;
+  src: local('GenSekiGothic-H'),
+    url(src/assets/styles/fonts/GenSekiGothic-H.ttc) format('truetype');
+}
+@font-face {
+  font-family: 'GenSekiGothic-L';
+  font-style: normal;
+  src: local('GenSekiGothic-L'),
+    url(src/assets/styles/fonts/GenSekiGothic-L.ttc) format('truetype');
+}
+
 * {
   color: $dark;
 }
 
 .container {
-  width: 1320px;
-  height: 800px;
+  width: 1288px;
+  height: 788px;
   border: 2px solid $dark;
   border-style: none solid;
-}
-
-.photo {
-  width: 185px;
-  height: 228px;
-}
-
-.name {
-  height: 89px;
-  width: 271px;
-  .name_ch {
-    font-size: 42px;
-  }
-  .name_en {
-    font-size: 42px;
+  padding-top: 19px;
+  > div {
+    margin-left: 65px;
   }
 }
 
-.introduction {
-  width: 620px;
-  height: 104px;
-  font-size: 20px;
+.info {
+  display: flex;
+  align-items: end;
+
+  .photo {
+    width: 185px;
+    height: 228px;
+  }
+
+  .name {
+    height: 104px;
+    width: 276px;
+    margin-left: 20px;
+    .name_ch {
+      height: 42px;
+      font-family: 'GenSekiGothic-H';
+      font-size: 42px;
+      display: flex;
+      align-items: flex-end;
+    }
+    .name_en {
+      height: 62px;
+      width: 276px;
+      font-family: 'M PLUS 1p';
+      font-size: 42px;
+      font-weight: 100;
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+}
+
+.intro_block {
+  height: 134px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 620px;
+    height: 104px;
+    font-size: 20px;
+  }
+}
+
+.dw_block {
+  height: 141px;
+  display: flex;
+  margin-top: 30px;
+  .mdw {
+    margin-left: 30px;
+  }
+}
+
+.mail_block {
+  margin-top: 30px;
+  height: 140px;
+  display: flex;
+  align-items: center;
 }

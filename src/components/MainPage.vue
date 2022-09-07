@@ -1,17 +1,36 @@
 <template>
   <div class="container">
-    <img src="../assets/C81C83E2.jpeg" class="photo" />
-    <div class="name">
-      <div class="name_ch">盧　俊諺</div>
-      <div class="name_en">CHUN-YEN LU</div>
+    <div class="info">
+      <img src="../assets/C81C83E2.jpeg" class="photo" />
+      <div class="name">
+        <div class="name_ch">盧　俊諺</div>
+        <div class="name_en">CHUN-YEN LU</div>
+      </div>
     </div>
-    <div class="introduction">
-      畢業於國立臺灣藝術大學圖文傳播藝術學系。<br />
-      向來喜歡接觸新奇的事物，且具有高行動力。<br />
-      自認學習能力佳，能快速上手全新事物，享受解決問題的過程。
+    <div class="intro_block">
+      <div class="introduction">
+        <div>畢業於國立臺灣藝術大學圖文傳播藝術學系。</div>
+        <div>向來喜歡接觸新奇的事物，且具有高行動力。</div>
+        <div>自認學習能力佳，能快速上手全新事物，享受解決問題的過程。</div>
+      </div>
     </div>
-    <div class="gdw"></div>
-    <div class="mdw"></div>
-    <div class="mail"></div>
+    <div class="dw_block">
+      <a href="" class="gdw"><img src="../assets/GDW.png" alt="" /></a>
+      <div class="mdw"><img src="../assets/MDW.png" alt="" /></div>
+    </div>
+    <div class="mail_block">
+      <div class="mail"><img src="../assets/mail.png" alt="" /></div>
+    </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {},
+  components: {},
+  data() {},
+  computed() {},
+  mounted() {},
+  methods() {},
+};
+</script>
