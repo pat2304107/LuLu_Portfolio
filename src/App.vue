@@ -7,7 +7,6 @@ import Test from './components/Test.vue';
 
 <style scoped>
 @import 'https://fonts.googleapis.com/css?family=M PLUS 1p';
-@import 'https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap&subset=chinese-traditional';
 </style>
 
 <template>

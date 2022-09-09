@@ -13,7 +13,24 @@ $main: #f46262;
   src: local('GenSekiGothic-L'),
     url(src/assets/styles/fonts/GenSekiGothic-L.ttc) format('truetype');
 }
-
+@mixin L {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: -85px;
+  height: 128px;
+}
+@mixin R {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  right: -27px;
+  height: 128px;
+}
 * {
   color: $dark;
 }
@@ -25,7 +42,7 @@ $main: #f46262;
   border-style: none solid;
   padding-top: 19px;
   > div {
-    margin-left: 65px;
+    margin-left: 60px;
   }
 }
 
@@ -42,6 +59,7 @@ $main: #f46262;
     height: 104px;
     width: 276px;
     margin-left: 20px;
+    padding-bottom: 5px;
     .name_ch {
       height: 42px;
       font-family: 'GenSekiGothic-H';
@@ -66,6 +84,10 @@ $main: #f46262;
   display: flex;
   align-items: center;
   margin-top: 15px;
+  position: relative;
+  .intro_L {
+    @include L;
+  }
   .introduction {
     display: flex;
     flex-direction: column;
@@ -74,14 +96,24 @@ $main: #f46262;
     height: 104px;
     font-size: 20px;
   }
+  .intro_R {
+    @include R;
+  }
 }
 
 .dw_block {
   height: 141px;
   display: flex;
   margin-top: 30px;
+  position: relative;
+  .dw_L {
+    @include L;
+  }
   .mdw {
     margin-left: 30px;
+  }
+  .dw_R {
+    @include R;
   }
 }
 
@@ -90,4 +122,11 @@ $main: #f46262;
   height: 140px;
   display: flex;
   align-items: center;
+  position: relative;
+  .mail_L {
+    @include L;
+  }
+  .mail_R {
+    @include R;
+  }
 }
