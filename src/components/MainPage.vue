@@ -7,7 +7,7 @@
         <div class="name_en">CHUN-YEN LU</div>
       </div>
     </div>
-    <div class="intro_block">
+    <div class="intro_block" data-aos="fade-up">
       <div class="intro_L"><img src="../assets/關於我L.png" alt="" /></div>
       <div class="introduction">
         <div>畢業於國立臺灣藝術大學圖文傳播藝術學系。</div>
