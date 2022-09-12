@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@fontsource/m-plus-1p": "^4.5.9",
-    "aos": "^2.3.4",
+    "jquery": "^3.6.1",
     "sass": "^1.54.8",
     "scss": "^0.2.4",
     "vue": "^3.2.37",
