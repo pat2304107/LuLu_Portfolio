@@ -20,13 +20,17 @@
     </div>
     <div class="dw_block come" v-show="dwIsShow">
       <div class="dw_L"><img src="../assets/dw_L.png" /></div>
-      <a href="" class="gdw"><img src="../assets/GDW.png" /></a>
+      <a href="https://issuu.com/luchunyen/docs/_2.0" class="gdw"
+        ><img src="../assets/GDW.png"
+      /></a>
       <div class="mdw"><img src="../assets/MDW.png" /></div>
       <div class="dw_R"><img src="../assets/dw_R.png" /></div>
     </div>
     <div class="mail_block come" v-show="mailIsShow">
       <div class="mail_L"><img src="../assets/mail_L.png" /></div>
-      <div class="mail"><img src="../assets/mail.png" alt="" /></div>
+      <a href="mailto:a20000306@gmail.com" class="mail"
+        ><img src="../assets/mail.png" alt=""
+      /></a>
       <div class="mail_R"><img src="../assets/mail_R.png" /></div>
     </div>
   </div>
