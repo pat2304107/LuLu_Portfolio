@@ -34,16 +34,105 @@ $main: #f46262;
 * {
   color: $dark;
 }
+.mainpage {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    width: 1288px;
+    height: 0px;
+    border: 2px solid $dark;
+    border-style: none solid;
+    padding-top: 19px;
+    > div {
+      margin-left: 60px;
+    }
+    .info {
+      display: flex;
+      align-items: end;
+      .photo {
+        width: 185px;
+        height: 228px;
+      }
 
-.container {
-  width: 1288px;
-  height: 0px;
-  border: 2px solid $dark;
-  border-style: none solid;
-  padding-top: 19px;
-  > div {
-    margin-left: 60px;
+      .name {
+        height: 104px;
+        width: 276px;
+        margin-left: 20px;
+        padding-bottom: 5px;
+        .name_ch {
+          height: 42px;
+          font-family: 'GenSekiGothic-H';
+          font-size: 42px;
+          display: flex;
+          align-items: flex-end;
+        }
+        .name_en {
+          height: 62px;
+          width: 276px;
+          font-family: 'M PLUS 1p';
+          font-size: 42px;
+          font-weight: 100;
+          display: flex;
+          align-items: flex-end;
+        }
+      }
+    }
+
+    .intro_block {
+      height: 134px;
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+      position: relative;
+      .intro_L {
+        @include L;
+      }
+      .introduction {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 620px;
+        height: 104px;
+        font-size: 20px;
+      }
+      .intro_R {
+        @include R;
+      }
+    }
+
+    .dw_block {
+      height: 141px;
+      display: flex;
+      margin-top: 30px;
+      position: relative;
+      .dw_L {
+        @include L;
+      }
+      .mdw {
+        margin-left: 30px;
+      }
+      .dw_R {
+        @include R;
+      }
+    }
+
+    .mail_block {
+      margin-top: 30px;
+      height: 140px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      .mail_L {
+        @include L;
+      }
+      .mail_R {
+        @include R;
+      }
+    }
   }
+
   .info {
     display: flex;
     align-items: end;
@@ -127,104 +216,20 @@ $main: #f46262;
       @include R;
     }
   }
-}
 
-.info {
-  display: flex;
-  align-items: end;
-  .photo {
-    width: 185px;
-    height: 228px;
+  .come {
+    animation: comeIn 1s;
+    // animation: fadeIn 0.2s;
   }
 
-  .name {
-    height: 104px;
-    width: 276px;
-    margin-left: 20px;
-    padding-bottom: 5px;
-    .name_ch {
-      height: 42px;
-      font-family: 'GenSekiGothic-H';
-      font-size: 42px;
-      display: flex;
-      align-items: flex-end;
+  @keyframes comeIn {
+    from {
+      opacity: 0;
+      transform: translateY(200px);
     }
-    .name_en {
-      height: 62px;
-      width: 276px;
-      font-family: 'M PLUS 1p';
-      font-size: 42px;
-      font-weight: 100;
-      display: flex;
-      align-items: flex-end;
+    to {
+      opacity: 1;
+      transform: translateY(0px);
     }
-  }
-}
-
-.intro_block {
-  height: 134px;
-  display: flex;
-  align-items: center;
-  margin-top: 15px;
-  position: relative;
-  .intro_L {
-    @include L;
-  }
-  .introduction {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 620px;
-    height: 104px;
-    font-size: 20px;
-  }
-  .intro_R {
-    @include R;
-  }
-}
-
-.dw_block {
-  height: 141px;
-  display: flex;
-  margin-top: 30px;
-  position: relative;
-  .dw_L {
-    @include L;
-  }
-  .mdw {
-    margin-left: 30px;
-  }
-  .dw_R {
-    @include R;
-  }
-}
-
-.mail_block {
-  margin-top: 30px;
-  height: 140px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  .mail_L {
-    @include L;
-  }
-  .mail_R {
-    @include R;
-  }
-}
-
-.come {
-  animation: comeIn 1s;
-  // animation: fadeIn 0.2s;
-}
-
-@keyframes comeIn {
-  from {
-    opacity: 0;
-    transform: translateY(200px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
   }
 }

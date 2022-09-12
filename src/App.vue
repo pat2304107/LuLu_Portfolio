@@ -2,6 +2,7 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import MainPage from './components/MainPage.vue';
+import MdwPage from './components/MdwPage.vue';
 import Test from './components/Test.vue';
 </script>
 
@@ -11,5 +12,6 @@ import Test from './components/Test.vue';
 
 <template>
   <MainPage />
+  <MdwPage />
   <!-- <Test /> -->
 </template>
