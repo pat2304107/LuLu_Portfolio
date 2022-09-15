@@ -1,6 +1,7 @@
 $light: #f2f2f2;
 $dark: #2e2624;
 $main: #f46262;
+@import './maskHoverAnimation.scss';
 @font-face {
   font-family: 'GenSekiGothic-H';
   font-style: normal;
@@ -39,18 +40,18 @@ $main: #f46262;
   display: flex;
   align-items: center;
   justify-content: center;
-  .container {
+  .mainContainer {
     width: 1288px;
     height: 0px;
     border: 2px solid $dark;
     border-style: none solid;
-    padding-top: 19px;
     > div {
       margin-left: 60px;
     }
     .info {
       display: flex;
       align-items: end;
+      margin-top: 19px;
       .photo {
         width: 185px;
         height: 228px;
@@ -61,14 +62,14 @@ $main: #f46262;
         width: 276px;
         margin-left: 20px;
         padding-bottom: 5px;
-        .name_ch {
+        .nameCh {
           height: 42px;
           font-family: 'GenSekiGothic-H';
           font-size: 42px;
           display: flex;
           align-items: flex-end;
         }
-        .name_en {
+        .nameEn {
           height: 62px;
           width: 276px;
           font-family: 'M PLUS 1p';
@@ -80,13 +81,13 @@ $main: #f46262;
       }
     }
 
-    .intro_block {
+    .introBlock {
       height: 134px;
       display: flex;
       align-items: center;
       margin-top: 15px;
       position: relative;
-      .intro_L {
+      .introL {
         @include L;
       }
       .introduction {
@@ -97,123 +98,54 @@ $main: #f46262;
         height: 104px;
         font-size: 20px;
       }
-      .intro_R {
+      .introR {
         @include R;
       }
     }
 
-    .dw_block {
+    .dwBlock {
       height: 141px;
       display: flex;
       margin-top: 30px;
       position: relative;
-      .dw_L {
+      .dwL {
         @include L;
+      }
+      .gdw {
+        position: relative;
+        @include mask;
       }
       .mdw {
         margin-left: 30px;
+        position: relative;
+        @include mask;
       }
-      .dw_R {
+      .dwR {
         @include R;
       }
     }
 
-    .mail_block {
+    .mailBlock {
       margin-top: 30px;
       height: 140px;
       display: flex;
       align-items: center;
       position: relative;
-      .mail_L {
+      .mailL {
         @include L;
       }
-      .mail_R {
+      .mail {
+        width: 76px;
+        height: 65px;
+        position: relative;
+        @include mask;
+        .hoverAnimation {
+          transition: 0.2s;
+        }
+      }
+      .mailR {
         @include R;
       }
-    }
-  }
-
-  .info {
-    display: flex;
-    align-items: end;
-    .photo {
-      width: 185px;
-      height: 228px;
-    }
-
-    .name {
-      height: 104px;
-      width: 276px;
-      margin-left: 20px;
-      padding-bottom: 5px;
-      .name_ch {
-        height: 42px;
-        font-family: 'GenSekiGothic-H';
-        font-size: 42px;
-        display: flex;
-        align-items: flex-end;
-      }
-      .name_en {
-        height: 62px;
-        width: 276px;
-        font-family: 'M PLUS 1p';
-        font-size: 42px;
-        font-weight: 100;
-        display: flex;
-        align-items: flex-end;
-      }
-    }
-  }
-
-  .intro_block {
-    height: 134px;
-    display: flex;
-    align-items: center;
-    margin-top: 15px;
-    position: relative;
-    .intro_L {
-      @include L;
-    }
-    .introduction {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 620px;
-      height: 104px;
-      font-size: 20px;
-    }
-    .intro_R {
-      @include R;
-    }
-  }
-
-  .dw_block {
-    height: 141px;
-    display: flex;
-    margin-top: 30px;
-    position: relative;
-    .dw_L {
-      @include L;
-    }
-    .mdw {
-      margin-left: 30px;
-    }
-    .dw_R {
-      @include R;
-    }
-  }
-
-  .mail_block {
-    margin-top: 30px;
-    height: 140px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    .mail_L {
-      @include L;
-    }
-    .mail_R {
-      @include R;
     }
   }
 

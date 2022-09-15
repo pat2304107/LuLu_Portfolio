@@ -1,13 +1,140 @@
-.mdwpage {
+.mdwpage1 {
   height: 100vh;
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
-  .container {
+  .mdwContainer {
     width: 1288px;
     height: 788px;
+    position: relative;
     border: 2px solid $dark;
     border-style: none solid;
-    padding-top: 19px;
+    animation: streching 3s;
+    .videoListL {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin-top: auto;
+      margin-bottom: auto;
+      left: -25px;
+      height: 128px;
+      z-index: 10;
+      animation: movingLeft 3s;
+    }
+    .videoListR {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin-top: auto;
+      margin-bottom: auto;
+      right: -25px;
+      height: 128px;
+      z-index: 5;
+      animation: movingRight 3s;
+    }
+    .mdwImg {
+      margin: 273px 158px 0px 217px;
+      animation: imgfading 2s;
+    }
+    .videoBlock {
+      height: 684px;
+      margin: 53px 56px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      animation: blockfading 1s;
+      .videoLink {
+        width: 380px;
+        height: 214px;
+        position: relative;
+        > img {
+          width: 380px;
+          height: auto;
+        }
+        @include mask;
+      }
+    }
+    .scrollToTopBtn {
+      height: 45px;
+      position: absolute;
+      right: -75px;
+      bottom: 0px;
+      cursor: pointer;
+      animation: btnFading 1s;
+    }
+  }
+
+  @keyframes streching {
+    0% {
+      width: 0px;
+      height: 0px;
+    }
+    40% {
+      width: 0px;
+      height: 0px;
+    }
+    70% {
+      width: 0px;
+      height: 788px;
+    }
+    100% {
+      width: 1288px;
+      height: 788px;
+    }
+  }
+  @keyframes imgfading {
+    0% {
+      opacity: 0;
+      transform: translateY(200px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-200px);
+    }
+  }
+  @keyframes blockfading {
+    0% {
+      opacity: 0;
+      transform: translateY(200px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  @keyframes movingLeft {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes movingRight {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes btnFading {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
