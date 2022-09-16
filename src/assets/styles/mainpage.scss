@@ -6,13 +6,13 @@ $main: #f46262;
   font-family: 'GenSekiGothic-H';
   font-style: normal;
   src: local('GenSekiGothic-H'),
-    url(src/assets/styles/fonts/GenSekiGothic-H.ttc) format('truetype');
+    url('./fonts/GenSekiGothic-H.ttc') format('truetype');
 }
 @font-face {
   font-family: 'GenSekiGothic-L';
   font-style: normal;
   src: local('GenSekiGothic-L'),
-    url(src/assets/styles/fonts/GenSekiGothic-L.ttc) format('truetype');
+    url('./fonts/GenSekiGothic-L.ttc') format('truetype');
 }
 @mixin L {
   position: absolute;
